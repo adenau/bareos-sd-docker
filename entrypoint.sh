@@ -6,7 +6,7 @@ set -e
 # Default configuration file paths
 CONFIG_DIR=/etc/bareos/bareos-sd.d
 DIRECTOR_CONF=$CONFIG_DIR/director/bareos-dir.conf
-STORAGE_CONF=$CONFIG_DIR/storage/myself.conf
+STORAGE_CONF=$CONFIG_DIR/storage/storage.conf
 DEVICE_CONF_DIR=$CONFIG_DIR/device
 
 # Validate required environment variables
