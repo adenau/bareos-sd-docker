@@ -6,7 +6,7 @@ set -e
 # Default configuration file paths
 CONFIG_DIR=/etc/bareos/bareos-sd.d
 DIRECTOR_CONF=$CONFIG_DIR/director/bareos-dir.conf
-STORAGE_CONF=$CONFIG_DIR/storage/storage.conf
+STORAGE_CONF=$CONFIG_DIR/storage/bareos-sd.conf
 DEVICE_CONF_DIR=$CONFIG_DIR/device
 
 # Validate required environment variables
@@ -57,6 +57,9 @@ Device {
   Description = "File device. A connecting Director must have the same Name and MediaType."
   Maximum Concurrent Jobs = 1
 }
+
+echo "Deleting extra FileStorage.conf file in device directory."
+rm "$DEVICE_CONF_DIR/device/FileStorage.conf"
 EOF
 done
 
