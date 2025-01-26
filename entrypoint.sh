@@ -58,10 +58,11 @@ Device {
   Maximum Concurrent Jobs = 1
 }
 
-echo "Deleting extra FileStorage.conf file in device directory."
-rm "$DEVICE_CONF_DIR/device/FileStorage.conf"
 EOF
 done
+
+echo "Deleting extra FileStorage.conf file in device directory."
+rm "$DEVICE_CONF_DIR/device/FileStorage.conf"
 
 # Start the Bareos Storage Daemon
 echo "Starting Bareos Storage Daemon..."
