@@ -18,7 +18,7 @@ RUN wget https://download.bareos.org/current/Debian_12/add_bareos_repositories.s
     chmod +x add_bareos_repositories.sh && \
     ./add_bareos_repositories.sh && \
     apt-get update && \
-    apt-get install -y bareos-storage-daemon && \
+    apt-get install -y bareos-storage && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
