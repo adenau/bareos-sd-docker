@@ -20,7 +20,7 @@ Installing Bareos SD directly on a host system can be cumbersome and may not sui
 ### Pull the Docker Image
 Pull the prebuilt Docker image (replace `<username>` with your GitHub username):
 ```bash
-docker pull ghcr.io/<username>/bareos-sd-docker:latest
+docker pull ghcr.io/adenau/bareos-sd-docker:latest
 ```
 
 ### Run the Container

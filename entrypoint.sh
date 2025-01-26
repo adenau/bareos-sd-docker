@@ -36,7 +36,6 @@ cat > "$STORAGE_CONF" <<EOF
 Storage {
   Name = $BAREOS_STORAGE_NAME
   SD Port = $BAREOS_STORAGE_PORT
-  Media Type = File
 }
 EOF
 
