@@ -46,7 +46,7 @@ for ((count=1; count<=$BAREOS_STORAGE_DEVICE_NO; count++)); do
   DEVICE_CONF="$DEVICE_CONF_DIR/device-$count.conf"
   cat > "$DEVICE_CONF" <<EOF
 Device {
-  Name = $BAREOS_STORAGE_NAME-$count
+  Name = $BAREOS_STORAGE_DEVICE_NAME-$count
   Media Type = File
   Archive Device = /data
   LabelMedia = yes
